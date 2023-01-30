@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
+import { useSelector } from 'react-redux';
 import './App.css';
+import { Header } from './Components/header/Header';
+import { ModalContact } from './Components/modalContact/ModalContact';
+import { MyJobs } from './Components/MyJobs/MyJobs';
+import { Nav } from './Components/navBar/Nav';
+import { Card } from './Components/PresentationCard/Card';
+import { Techs } from './Components/Techs/Techs';
+
 
 function App() {
+  const {visible}= useSelector(state=> state.contact)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav/>
+      { visible && <ModalContact isHidden={!visible}/>}
+      <Card/> 
+      <Header/>
+      <Techs/>
+      <MyJobs/>
+    </>
   );
 }
 
