@@ -13,7 +13,7 @@ const JobItem=({url, link, desc, name})=>{
                 <DescContaiener>
                     <Desc>
                         <NameJobsContainer>
-                        <NameJobs>{name}</NameJobs>
+                            <NameJobs>{name}</NameJobs>
                         </NameJobsContainer>
 
                         {desc}

@@ -18,6 +18,12 @@ export const ImageContainer=styled.div`
     margin-top:15rem;
     justify-content: center;
     align-items: center;
+
+      /* Media queries tablet */
+
+   @media screen and (max-width:768px ) {
+        display: none;
+    }
 `
 
 export const TitleContainer= styled.div`
@@ -27,12 +33,47 @@ export const TitleContainer= styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+
+      /* Media queries laptop */
+
+      @media screen and (max-width:1024px ) {
+        margin-bottom: 20px;
+    }
+
+    
+    /* Media queries tablet */
+
+    @media screen and (max-width:768px ) {
+        margin-bottom: 30px;
+        
+    }
+
+    
+    /* Media queries Mobile */
+
+    @media screen and (max-width:480px) {
+        margin-bottom: 50px;
+        margin-top: 20rem;
+    }
 `
 
 export const Title=styled.h2`
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 2rem;
+
+      /* Media queries laptop */
+
+      @media screen and (max-width:1024px ) {
+        margin-top: 80px;
+    }
+
+    /* Media queries tablet */
+
+    @media screen and (max-width:768px ) {
+        margin-top: 16rem;
+        
+    }
 `
 
 export const TechCardContainer=styled.div`
@@ -64,6 +105,29 @@ export const TechCard=styled.div`
     box-shadow: 0px 0px 53px -24px rgba(255,255,255,0.75) inset;
     -webkit-box-shadow: 0px 0px 53px -24px rgba(255,255,255,0.75) inset;
     -moz-box-shadow: 0px 0px 53px -24px rgba(255,255,255,0.75) inset;
+
+      /* Media queries laptop */
+
+      @media screen and (max-width:1024px ) {
+        width: 18rem;
+        height: 27rem;
+    }
+
+   /* Media queries tablet */
+
+   @media screen and (max-width:768px ) {
+        width: 17rem;
+        height: 22rem;
+        background: #d757e8;
+        background: linear-gradient(43deg, rgba(216,87,232,1) 0%, rgba(232,233,82,1) 100%);
+    }
+
+    /* Media queries Mobile */
+
+    @media screen and (max-width:480px) {
+        width: 15rem;
+        height: 20rem;
+    }
 `
 
 export const TechIcon=styled.div`
@@ -72,6 +136,26 @@ export const TechIcon=styled.div`
     color: #f6f6f6;
     :hover{transform: scale(0.9);}
     filter: drop-shadow(0px 0px 49px black);
+
+      /* Media queries laptop */
+
+      @media screen and (max-width:1024px ) {
+        font-size: 14rem;
+    }
+
+    
+   /* Media queries tablet */
+
+   @media screen and (max-width:768px ) {
+        font-size: 12rem;
+        filter: drop-shadow(0px 5px 2px #151412);
+    }
+
+    /* Media queries Mobile */
+
+    @media screen and (max-width:480px) {
+        font-size: 10rem;
+    }
 `
 
 export const TechName=styled.p`

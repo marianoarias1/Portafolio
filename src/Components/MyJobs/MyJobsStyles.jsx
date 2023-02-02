@@ -11,6 +11,15 @@ export const JobsContainer=styled.div`
     background-color: #151312;
     margin-top: 8.5rem;
     flex-direction: column;
+
+    
+      /* Media queries laptop */
+
+      @media screen and (max-width:1024px ) {
+        margin-top: 0rem;
+    }
+
+
 `
 
 export const JobTitleContainer= styled.div`
@@ -19,12 +28,39 @@ export const JobTitleContainer= styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Media queries laptop */
+
+    @media screen and (max-width:1024px ) {
+        margin-top: 3rem;
+    }
+
+    /* Media queries tablet */
+
+    @media screen and (max-width:768px ) {
+        margin-top: 25rem;
+        margin-bottom: 15rem;
+    }
+
+    /* Media queries Mobile */
+
+    @media screen and (max-width:480px) {
+        margin-bottom: 40rem;
+        margin-top: 5rem;
+        width: 100%;
+    }
 `
 
 export const TitleJobs=styled.h2`
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: #e0e0e0f2;
+
+    /* Media queries Mobile */
+
+    @media screen and (max-width:480px) {
+        font-size: 1.6rem;
+    }
 `
 
 export const JobsCardContainer=styled.div`
@@ -33,6 +69,22 @@ export const JobsCardContainer=styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    /* Media queries tablet */
+
+    @media screen and (max-width:768px ) {
+        flex-direction: column;
+    }
+
+    /* Media queries Mobile */
+
+    @media screen and (max-width:480px) {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        overflow-x: scroll;
+        position: absolute;
+        
+    }
 `
 
 export const JobsCard=styled.div`
@@ -55,6 +107,28 @@ export const EachCardContainer=styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    /* Media queries laptop */
+
+    @media screen and (max-width:1024px ) {
+        width: 28%;
+        height: 90%;
+    }
+
+    /* Media queries tablet */
+
+   @media screen and (max-width:768px ) {
+    width: 70%;
+    height: 100%;
+    margin: 2rem;
+    }
+
+    /* Media queries Mobile */
+
+    @media screen and (max-width:480px) {
+        height: 32rem;
+        width: 90%;
+    }
 `
 
 export const JobsImageContainer=styled.div`
@@ -76,6 +150,17 @@ export const JobsImage=styled.img`
         height: 50%;
         border-radius: 10px 10px 0px 0px;
     }
+
+    /* Media queries tablet */
+
+    @media screen and (max-width:768px ) {
+        height: 50%;
+        border-radius: 10px 10px 0px 0px;
+        object-position: top;
+        :hover{
+            height: disabled;
+        }
+    }
 `
 
 export const DescContaiener=styled.div`
@@ -85,6 +170,19 @@ export const DescContaiener=styled.div`
     justify-content: center;
     align-items: flex-end;
     position: absolute;
+
+    /* Media queries laptop */
+
+    @media screen and (max-width:1024px ) {
+        width: 25%;
+        height: 45%;
+    }
+
+        /* Media queries tablet */
+
+        @media screen and (max-width:768px ) {
+        width: 70%;
+    }
 `
 
 export const NameJobsContainer=styled.div`
@@ -93,6 +191,12 @@ export const NameJobsContainer=styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    /* Media queries laptop */
+
+    @media screen and (max-width:1024px ) {
+        width: 100%;
+    }
 `
 
 export const NameJobs=styled.h3`
@@ -101,9 +205,15 @@ export const NameJobs=styled.h3`
     color: #e0e0e0f2;
     width: 100%;
     text-align: center;
+
+    /* Media queries laptop */
+
+    @media screen and (max-width:1024px ) {
+        font-size: 1rem;
+    }
 `
 
-export const Desc=styled.p`
+export const Desc=styled.div`
     width: 90%;
     position: absolute;
     font-family: 'Poppins', sans-serif;
@@ -111,10 +221,18 @@ export const Desc=styled.p`
     flex-grow: 1;
     color: #e0e0e0f2;
     text-align: center;
+
+        /* Media queries laptop */
+
+        @media screen and (max-width:1024px ) {
+            width: 100%;
+            font-size: .9rem;
+            height: 50%;
+    }
 `
 
 export const JobsLink=styled.a`
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
