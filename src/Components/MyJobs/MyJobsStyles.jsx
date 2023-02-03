@@ -19,7 +19,6 @@ export const JobsContainer=styled.div`
         margin-top: 0rem;
     }
 
-
 `
 
 export const JobTitleContainer= styled.div`
@@ -59,7 +58,9 @@ export const TitleJobs=styled.h2`
     /* Media queries Mobile */
 
     @media screen and (max-width:480px) {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
     }
 `
 
@@ -127,7 +128,9 @@ export const EachCardContainer=styled.div`
 
     @media screen and (max-width:480px) {
         height: 32rem;
-        width: 90%;
+        width: 100%;
+        margin:0px;
+        margin-right: 2rem;
     }
 `
 

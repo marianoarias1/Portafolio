@@ -28,6 +28,10 @@ export const ItemsContainer=styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @media screen and (max-width: 780px){
+        display: none;
+    }
 `
 
 export const ItemNav=styled.a`
@@ -72,4 +76,84 @@ export const ItemNav=styled.a`
         -webkit-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.64) inset;
         -moz-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.64) inset;
     }
+`
+
+export const MobileNav=styled.div`
+    display: none;
+    @media screen and (max-width:768px){
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    }
+
+`
+
+export const ButtonMobile=styled.a`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background-color: transparent;
+    :active{
+        & :nth-child(1){
+            width: 25px;
+        }
+        & :nth-last-child(2){
+            width: 25px;
+        }
+        & :last-child{
+            width: 25px;
+        }
+
+    }
+
+`
+
+export const MobileItem=styled.div`
+position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #646363;
+    transition: all .2s;
+
+    :nth-child(1){
+        margin-bottom: 1.5rem;
+    }
+    :nth-child(3){
+        margin-top: 1.5rem;
+    }
+`
+
+export const MobileMenuContainer=styled.div`
+    display: none;
+    @media screen and (max-width: 780px){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    position: absolute;
+    z-index: 1;
+    }
+
+`
+
+export const MobileMenu=styled.div`
+    display: none;
+    @media screen and (max-width: 780px){
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #151412cc;
+    }
+
 `

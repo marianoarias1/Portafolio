@@ -1,7 +1,9 @@
 import React from 'react'
-import { Icon, IconContainer, ItemContainer, LinkText, Modal, ModalContainer, TextContainer, TextItem, Title, TitleContainer } from './modalContactStyles'
+import { Close, CloseContainer, Icon, IconContainer, ItemContainer, LinkText, Modal, ModalContainer, TextContainer, TextItem, Title, TitleContainer } from './modalContactStyles'
 import {BsFillPhoneFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillInstagram, AiFillGithub, AiOutlineMail} from 'react-icons/ai'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleVisible } from './contactActions'
 
 export const Items=({text, children, link})=>{
     return(
@@ -24,12 +26,22 @@ export const Items=({text, children, link})=>{
 }
 
 export const ModalContact = () => {
+    const {visible}=useSelector(state=>state.contact)
+    const dispatch=useDispatch()
   return (
     <>
         <ModalContainer>
             <Modal
             data-aos="fade-left"
             >
+                <CloseContainer>
+                    <Close
+                    onClick={()=>{
+                      return visible == true ? dispatch(toggleVisible()) : null
+                    }}
+                    >X</Close>
+                </CloseContainer>
+
                 <TitleContainer>
                     <Title>Contáctame!</Title>
                 </TitleContainer>

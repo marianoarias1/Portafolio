@@ -19,6 +19,27 @@ export const Modal=styled.div`
     box-shadow: -11px -15px 24px -1px rgba(0,0,0,0.64);
 -webkit-box-shadow: -11px -15px 24px -1px rgba(0,0,0,0.64);
 -moz-box-shadow: -11px -15px 24px -1px rgba(0,0,0,0.64);
+
+  /* Media queries mobile */
+
+  @media screen and (max-width:480px){
+    width: 60%;
+    height: 92.5%;
+    }
+`
+
+export const CloseContainer=styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+`
+
+export const Close= styled.p`
+    font-family: 'Poppins', sans-serif;
+    color: #ffffffcf;
+    font-size: 1rem;
+    margin-right: 50px;
 `
 
 export const TitleContainer=styled.div`
@@ -40,6 +61,11 @@ export const ItemContainer=styled.div`
     justify-content: space-evenly;
     align-items: center;
 
+    /* Media queries tablet */
+
+    @media screen and (max-width:768px){
+        flex-direction: column;
+    }
 `
 
 export const TextContainer=styled.div`
@@ -53,6 +79,12 @@ export const TextItem=styled.p`
     font-family: 'Poppins', sans-serif;
     color: #ffffffcf;
     font-size: 1rem;
+
+    /* Media queries tablet */
+
+    @media screen and (max-width:768px){
+        font-size: .9rem;
+    }
 `
 
 export const LinkText=styled.a`
