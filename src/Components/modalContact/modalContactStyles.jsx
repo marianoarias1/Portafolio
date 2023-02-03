@@ -23,7 +23,7 @@ export const Modal=styled.div`
   /* Media queries mobile */
 
   @media screen and (max-width:480px){
-    width: 60%;
+    width: 100%;
     height: 92.5%;
     }
 `
