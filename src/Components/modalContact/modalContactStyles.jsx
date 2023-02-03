@@ -66,6 +66,13 @@ export const ItemContainer=styled.div`
     @media screen and (max-width:768px){
         flex-direction: column;
     }
+
+    
+  /* Media queries mobile */
+
+  @media screen and (max-width:480px){
+    width: 100%;
+    }
 `
 
 export const TextContainer=styled.div`
@@ -73,6 +80,7 @@ export const TextContainer=styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
 `
 
 export const TextItem=styled.p`
@@ -97,6 +105,8 @@ export const IconContainer=styled.div`
     display: flex;
     justify-content:center;
     align-items: center;
+
+
 `
 
 
