@@ -58,7 +58,8 @@ export const TitleJobs=styled.h2`
     /* Media queries Mobile */
 
     @media screen and (max-width:480px) {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-top: 2rem;
         width: 100%;
         text-align: center;
     }
